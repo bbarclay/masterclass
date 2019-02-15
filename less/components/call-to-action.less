@@ -1,0 +1,66 @@
+.call-to-action {
+	padding: 0.75rem;
+	font-size: 1.2em;
+	text-align: center;
+	background: @green;
+
+	@media ( min-width: @M ) {
+		font-size: 1.5em;
+	}
+}
+
+.call-to-action__title.call-to-action__title,
+.call-to-action__button {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0.25rem 0.75rem;
+}
+
+.call-to-action__title {
+	font-family: 'Geogrotesque-Medium';
+	text-transform: uppercase;
+	color: #FFF;
+
+	strong {
+		font-family: 'Geogrotesque-SemiBold';
+		color: @darkBlue;
+	}
+}
+
+.call-to-action--blue {
+	background: @darkBlue;
+
+	.call-to-action__title strong {
+		color: @green;
+	}
+}
+
+.call-to-action--image {
+	padding-top: 7.5rem;
+	padding-bottom: 6rem;
+	background: #EEE center center / cover no-repeat;
+	text-align: left;
+
+	.call-to-action__title.call-to-action__title,
+	.call-to-action__button {
+		margin-left: 0;
+	}
+
+	.call-to-action__title {
+		display: block;
+		font-size: 5vw;
+		font-family: 'Geogrotesque-SemiBold';
+
+		@media ( min-width: @L ) {
+			font-size: 2.7rem;
+		}
+
+		span {
+			display: inline-block;
+			margin: 0.08em 0;
+			padding: 2px 5px;
+			background: @orange;
+			color: #FFF;
+		}
+	}
+}

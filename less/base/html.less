@@ -1,0 +1,186 @@
+/*------------------------------------*\
+	#BASE-HTML-STYLES
+\*------------------------------------*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+/* Document */
+html {
+	font: normal normal @copySize/1.5 @copyFamily;
+	text-size-adjust: 100%;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	background: @background;
+	color: @color;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 0.25em 0;
+	.headingsStyles();
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+h1 {
+	font-size: 1.6em;
+
+	@media ( min-width: @M ) {
+		font-size: 2.2em;
+	}
+}
+
+h2 {
+	font-size: 1.3em;
+
+	@media ( min-width: @M ) {
+		font-size: 1.7em;
+	}
+}
+
+h3 {
+	font-size: 1.1em;
+
+	@media ( min-width: @M ) {
+		font-size: 1.4em;
+	}
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 0.9em;
+}
+
+h6 {
+	font-size: 0.8em;
+}
+
+/* Small */
+small {
+	font-size: 0.875em;
+}
+
+/* Block Elements */
+p,
+ol,
+ul,
+dl,
+dd,
+form,
+table,
+address,
+pre {
+	margin: 0 0 1.5em 0;
+}
+
+/* Embeds */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+/* Lists */
+ol,
+ul {
+	padding-left: 10%;
+
+	@media ( min-width: @S ) {
+		padding-left: 5%;
+	}
+}
+
+li {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+
+	ol,
+	ul {
+		margin: 0;
+	}
+}
+
+dt {
+	font-weight: bold;
+}
+
+/* Tables */
+table {
+	width: 100%;
+	font-size: inherit;
+}
+
+th,
+td {
+	vertical-align: top;
+	padding: 0.25em 1em 0.25em 0;
+}
+
+th {
+	text-align: left;
+}
+
+/* Quotes */
+blockquote {
+	margin: 0 5%;
+}
+
+/* Edits */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: strikethrough;
+}
+
+/* Abbreviations */
+abbr {
+	cursor: help;
+}
+
+/* Links */
+a {
+	text-decoration: none;
+	color: @trim;
+	transition: color 150ms ease-out, border-color 150ms ease-out, background-color 150ms ease-out, opacity 150ms ease-out;
+
+	&:hover {
+		color: @highlight;
+	}
+}
+
+/* Images */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Selected text */
+::selection {
+	background: @trim;
+
+	& when ( lightness( @trim ) >= 50% ) {
+		color: #000;
+	}
+
+	& when ( lightness( @trim ) < 50% ) {
+		color: #FFF;
+	}
+}

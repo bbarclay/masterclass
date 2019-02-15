@@ -1,0 +1,32 @@
+.menu--footer {
+	padding: 0;
+	font-family: 'Geogrotesque-Medium', sans-serif;
+	text-transform: uppercase;
+
+	.menu__item {
+		list-style: none;
+		margin: 0;
+
+		a {
+			padding: 0 0.3em;
+			background: @lightBlue;
+
+			&:hover,
+			&:focus {
+				background: @orange;
+				color: #FFF;
+			}
+		}
+	}
+}
+
+.menu--fine-print {
+    .menu__item {
+		display: inline;
+		white-space: nowrap;
+
+		&:before {
+			content: ' / ';
+		}
+	}
+}

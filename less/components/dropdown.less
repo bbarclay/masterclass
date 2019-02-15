@@ -1,0 +1,90 @@
+/*------------------------------------*\
+	#DROPDOWN-COMPONENT
+\*------------------------------------*/
+
+@media ( min-width: @L ) {
+	.dropdown {
+		clip: rect(0,0,0,0);
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		left: 100%;
+		min-width: 16em;
+		padding: 0 0 0 5px;
+		text-align: left;
+		white-space: nowrap;
+		box-shadow: 0 5px 20px -10px rgba(0,0,0,0.5);
+		opacity: 0;
+		transition: opacity 200ms ease-out;
+
+		.focus > &,
+		:hover > & {
+			clip: auto;
+			opacity: 1;
+		}
+	}
+
+	.dropdown--level-0 {
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 5px 0 0 0;
+	}
+
+	.dropdown__item {
+		display: block;
+		margin: 0;
+
+		a {
+			display: block;
+			padding: 1em 1.3em;
+			background: #2f2d2e;
+			color: #FFF;
+		}
+
+		&.focus > a,
+		a:hover,
+		&.is-current > a {
+			background: darken(#2f2d2e,5%);
+			color: #FFF;
+		}
+
+		&.has-children > a:after {
+			content: '\f431';
+			position: absolute;
+			right: 1em;
+			transform: rotateZ(-90deg);
+			font-family: 'genericons';
+		}
+
+		&:first-child > a {
+			position: relative;
+			border-radius: 3px 3px 0 0;
+
+			&:before {
+				content: '';
+				position: absolute;
+				right: 100%;
+				bottom: 50%;
+				transform: translateY(50%);
+				display: block;
+				width: 0;
+				height: 0;
+				border-width: 5px;
+				border-style: solid;
+				border-color: transparent #2f2d2e transparent transparent;
+
+				.dropdown--level-0 > & {
+					right: 50%;
+					bottom: 100%;
+					transform: translateX(50%);
+					border-color: transparent transparent #2f2d2e transparent;
+				}
+			}
+		}
+
+		&:last-child > a {
+			border-radius: 0 0 3px 3px;
+		}
+	}
+}

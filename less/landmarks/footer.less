@@ -1,0 +1,49 @@
+/*------------------------------------*\
+	#FOOTER
+\*------------------------------------*/
+
+.footer {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background: @darkBlue;
+	.clearfix();
+
+	&,
+	a:not(:hover) {
+		color: #FFF;
+	}
+
+	p {
+		margin-bottom: 1rem;
+	}
+}
+
+.footer__logo {
+	margin-bottom: 1rem;
+}
+
+.footer__fine-print {
+	font-size: 0.9em;
+}
+
+.footer__tagline {
+	position: relative;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.3em;
+	border-bottom: 2px dotted fade(#FFF, 60%);
+	font-family: 'Geogrotesque-Regular', sans-serif;
+	font-size: 1.25em;
+
+	&:after {
+	    content: '\f501';
+	    font-size: 0.5em;
+	    font-family: 'Genericons';
+	    position: absolute;
+	    left: 100%;
+	    left: calc(100% + 0.5em);
+	    top: 100%;
+	    top: calc(100% + 1px);
+	    transform: translateY(-50%);
+	    color: @blue;
+	}
+}

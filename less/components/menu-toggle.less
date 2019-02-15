@@ -1,0 +1,33 @@
+/*------------------------------------*\
+	#MENU-TOGGLE-COMPONENT
+\*------------------------------------*/
+
+.menu-toggle {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 1em 0 0;
+	background: transparent;
+	color: inherit;
+
+	&:before {
+		content: '\f431';
+		display: inline-block;
+		vertical-align: top;
+		font-size: 1.25em;
+		font-family: 'genericons';
+		transition: transform 150ms ease-out;
+		transition-origin: center center;
+	}
+
+	&[aria-expanded="true"]:before {
+		transform: rotateX(180deg);
+	}
+
+	.no-js & {
+		display: none;
+	}
+
+	@media ( min-width: @L ) {
+		display: none;
+	}
+}

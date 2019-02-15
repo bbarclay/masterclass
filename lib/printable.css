@@ -1,0 +1,41 @@
+/* Print Style Sheet */
+body { background:white; color:black; margin:0; -webkit-print-color-adjust: exact; }
+header.header {
+    display: none;
+}
+nav#navigation {
+    display: none;
+}
+footer.footer {
+    display: none;
+}
+.image {background: #f5f5f5;
+    overflow: hidden;
+}
+.grid--boxes .grid__column {
+    width: 20%;
+}
+.profiling .member .image {
+    height: 180px !important;
+}
+.profiling .member .name {font-family: 'Geogrotesque-Medium', sans-serif !important;
+    text-align: center;
+    display: block;
+    font-size: 0.8em !important;
+    margin-top: 0.5em;
+}
+.bg-Blue { background: #00bce4;
+    padding: 0.5em;
+}
+.profiling .member .bg-Yellow { background: #ffc107;
+    padding: 0.5em;
+}
+.profiling .information {
+    min-height: 30px !important;
+}
+.profiling .member {
+    margin-bottom: 0;
+}
+.printable-style {
+    display: none;
+}

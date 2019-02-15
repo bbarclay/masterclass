@@ -1,0 +1,57 @@
+.blueprint {
+    margin-bottom: 3rem;
+}
+
+.blueprint--full {
+    padding-top: 3rem;
+}
+
+.blueprint__title {
+    font-size: 1.1em;
+
+    @media ( min-width: @M ) {
+        font-size: 1.4em;
+    }
+
+    .blueprint--full & {
+        font-size: 1.3em;
+
+    	@media ( min-width: @M ) {
+    		font-size: 1.7em;
+    	}
+    }
+
+    a:not(:hover) {
+        color: inherit;
+    }
+}
+
+.blueprint__header {
+    margin-bottom: 1rem;
+
+    .blueprint--full & {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.blueprint__thumbnail {
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+
+    .blueprint--full & {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.blueprint__downloads {
+    .blueprint--full & {
+        @media ( min-width: @L ) {
+            max-width: 50%;
+        }
+    }
+}
+
+.blueprint__terms {
+    margin-bottom: 1.5rem;
+}

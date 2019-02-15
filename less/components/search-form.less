@@ -1,0 +1,48 @@
+/*------------------------------------*\
+	#SEARCH-FORM-COMPONENT
+\*------------------------------------*/
+
+.search-form {
+	display: block;
+	position: relative;
+	border-bottom: 1px solid @grey;
+	font-size: 1.3em;
+	background: #FFF;
+
+	@media ( min-width: @M ) {
+		font-size: 2em;
+	}
+
+	.container {
+		position: relative;
+	}
+}
+
+.search-form__input {
+	width: 100%;
+	padding: 0;
+	border: none;
+	background: #FFF;
+	font-size: inherit;
+	font-family: 'Geogrotesque-Light', sans-serif;
+
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.search-form__close {
+	.cover(0, 0, 0, auto);
+	height: auto;
+	padding: 0 0.5em;
+	background: linear-gradient(to right, transparent, #FFF 75%);
+	color: @grey;
+	font-size: inherit;
+
+	&:before {
+		content: '\f406';
+		font-family: 'Genericons';
+		vertical-align: middle;
+		line-height: 2.5;
+	}
+}

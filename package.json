@@ -1,0 +1,16 @@
+{
+  "name": "cascade",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-git": "^0.3.5",
+    "grunt-postcss": "^0.5.4",
+    "matchdep": "^0.3.0"
+  }
+}

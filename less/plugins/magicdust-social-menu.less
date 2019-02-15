@@ -1,0 +1,37 @@
+.social-menu {
+    .clearfix();
+    
+    .footer & {
+        margin: 1rem 0;
+    }
+}
+
+.social-menu__item {
+    display: block;
+    float: left;
+    margin-right: 10px;
+
+    a {
+        width: 1.375em;
+        border-radius: 50%;
+        font-size: 16px;
+        line-height: 1.375em;
+        background: @darkBlue;
+        color: #FFF;
+
+        &:hover {
+            background: @orange;
+            color: #FFF;
+        }
+
+        .footer & {
+            background: #FFF;
+            color: @darkBlue;
+
+            &:hover {
+                background: @orange;
+                color: @darkBlue;
+            }
+        }
+    }
+}

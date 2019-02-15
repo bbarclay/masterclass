@@ -1,0 +1,94 @@
+.video {
+
+}
+
+.video__screen,
+.video__video {
+    iframe,
+    .wp-video {
+        // .cover();
+    }
+}
+
+.video__screen {
+    margin-bottom: 3rem;
+    background: #0a0a0a;
+
+    .container {
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+
+        // &:after {
+        //     content: '';
+        //     display: block;
+        //     padding-bottom: 56.25%;
+        // }
+    }
+}
+
+.video__video {
+    position: relative;
+    margin-bottom: 1.5rem;
+
+    // &:after {
+    //     content: '';
+    //     display: block;
+    //     padding-bottom: 56.25%;
+    // }
+}
+
+.video__header {
+
+}
+
+.video__title {
+    margin-bottom: 1.5rem;
+
+    a {
+        color: inherit;
+    }
+}
+
+.video__presenter {
+    margin-bottom: 1.5rem;
+
+    &:extend(h3);
+    color: @orange;
+
+    a {
+        color: inherit;
+    }
+}
+
+.video__downloads {
+    margin-bottom: 1.5rem;
+}
+
+.video__terms {
+    margin-bottom: 1.5rem;
+
+    @media ( min-width: @M ) {
+        .grid__column:last-child {
+            text-align: right;
+        }
+    }
+}
+
+.video--webinar .video__content {
+    ul{
+        &:extend(.checklist);
+
+        li {
+            &:extend(.checklist li);
+
+            &:before {
+                &:extend(.checklist li:before);
+            }
+        }
+    }
+}
+
+.video--excerpt {
+    margin-bottom: 3rem;
+}

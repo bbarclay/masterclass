@@ -1,0 +1,38 @@
+/*------------------------------------*\
+	#ENTRY-COMPONENT
+\*------------------------------------*/
+
+.entry {
+	margin-bottom: 3rem;
+}
+
+.entry__header {
+	margin-bottom: 1.5em;
+}
+
+.entry__title {
+	word-wrap: break-word;
+
+	.entry--mybbp_series & {
+		@media ( min-width: @S ) {
+			overflow: hidden;
+			height: 3.6em;
+		}
+	}
+}
+
+.entry__meta {
+	font-size: 0.875em;
+	color: fade(@color, 50%);
+}
+
+.entry__title,
+.entry__meta {
+	a:not(:hover) {
+		color: inherit;
+	}
+}
+
+.entry__footer {
+	margin-top: 4.5em;
+}

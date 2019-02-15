@@ -1,0 +1,43 @@
+.checklist {
+	padding-left: 0;
+	list-style: none;
+
+	.clearfix();
+
+	li {
+		position: relative;
+		padding-left: 2em;
+
+		&:before {
+			content: url(images/check.svg);
+			position: absolute;
+			left: 0;
+			display: inline-block;
+			vertical-align: baseline;
+			width: 1em;
+			height: 1em;
+		}
+	}
+}
+
+.checklist--2-columns & {
+	@media ( min-width: @S ) {
+		margin-right: -1em;
+		margin-left: -1em;
+
+		li {
+			float: left;
+			width: 50%;
+			padding-left: 3em;
+			padding-right: 1em;
+
+			&:nth-child(odd) {
+				clear: left;
+			}
+
+			&:before {
+				left: 1em;
+			}
+		}
+	}
+}

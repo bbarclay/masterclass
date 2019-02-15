@@ -1,0 +1,54 @@
+/*------------------------------------*\
+	#PAGINATION-COMPONENT
+\*------------------------------------*/
+
+.pagination {
+	.clearfix();
+
+	> a,
+	> span,
+	> li,
+	> li > a,
+	> li > span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	> a,
+	> span,
+	> li {
+		margin: 0.15em;
+	}
+
+	> a,
+	> li > a,
+	> span {
+		padding: 0.25em 0.75em;
+		border: 1px solid @grey;
+		color: @darkBlue;
+	}
+
+	> span,
+	.current > a {
+		color: fade(@color, 50%);
+	}
+
+	> .disabled {
+		display: none;
+	}
+
+	.dots {
+		border-color: transparent;
+	}
+
+	ul& {
+		list-style: none;
+		padding: 0;
+	}
+}
+
+.pagination,
+.post-navigation {
+	margin-top: 4.5rem;
+	margin-bottom: 4.5rem;
+}

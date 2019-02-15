@@ -1,0 +1,23 @@
+.tag {
+    display: inline-block;
+    margin-right: 0.25em;
+    padding: 0.25em 0.5em;
+    line-height: 1;
+    font-family: 'Geogrotesque-Bold', sans-serif;
+    text-transform: uppercase;
+    background: @grey;
+    color: #FFF;
+
+    a&:hover {
+        background: darken(@grey,10%);
+        color: #FFF;
+    }
+}
+
+.tag--primary {
+    background: @blue;
+
+    a&:hover {
+        background: darken(@blue,10%);
+    }
+}

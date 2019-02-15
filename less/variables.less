@@ -1,0 +1,168 @@
+/**
+* Typography.
+*/
+@copySize:       18px;
+@copyFamily:     'PT Sans', sans-serif;
+@headingsFamily: 'Geogrotesque-Medium', sans-serif;
+.headingsStyles() {
+	font-weight: normal;
+	line-height: 1.2;
+	font-family: @headingsFamily;
+	color: @headings;
+
+	strong {
+		font-weight: normal;
+	}
+}
+
+/**
+ * Brand colours.
+ */
+@darkBlue:  rgb(0,39,73);
+@blue:      rgb(0,118,192);
+@lightBlue: rgb(0,188,228);
+@orange:    rgb(241,93,34);
+@green:     rgb(122,193,67);
+@grey:      #c7c8ca;
+
+/**
+ * Colours.
+ *
+ * 1. Background colour. Use this variable for the background colour of the
+ *    element that content sits on. By default this is the body.
+ * 2. Content text colour. Use this variable for the text color of the element
+ *    that content sits in. By default this is the body.
+ * 3. Headings text colour.
+ * 4. Colour for links, background for selected text, border colour for focused
+ *    form elements.
+ * 5. Link hover colour.
+ */
+@background:      #FFF; /* 1 */
+@color:           #2F2F2F; /* 2 */
+@headings:        @darkBlue; /* 3 */
+@trim:            @blue; /* 4 */
+@highlight:       @orange; /* 5 */
+
+/**
+ * Common media query breakpoints.
+ *
+ * All of these variables are used in several mixins. If a breakpoint is
+ * unnecessary, make sure to adjust the mixins, or simply set the breakpoint's
+ * value to match the preceding size.
+ */
+@S:  480px;
+@M:  680px;
+@L:  1050px;
+@XL: 1200px;
+
+/**
+ * Galleries.
+ */
+@gallerySpacing: 0.25em;
+
+/**
+ * Grid system variables.
+ */
+@gridColumns: 12;
+@gridGutterWidth: 30px;
+
+/**
+ * UI colours. Tasteful choices for non-branded UI elements.
+ *
+ * ncs refers to the Natural Color System. More information:
+ * https://en.wikipedia.org/wiki/Natural_Color_System
+ */
+@ncsGreen:     #009F6B;
+@ncsRed:       #C40233;
+@ncsYellow:    #FFD300;
+@ncsBlue:      #0087BD;
+@safetyOrange: #E87600;
+
+/**
+ * Clearfix
+ */
+.clearfix() {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+/**
+ * Cover
+ *
+ * Position an element to cover it's closest position: relative parent.
+ */
+.cover( @top: 0, @right: 0, @bottom: 0, @left: 0 ) {
+	position: absolute;
+	top: @top;
+	right: @right;
+	bottom: @bottom;
+	left: @left;
+	display: block;
+}
+
+/**
+ * Absolute Center
+ *
+ * Position an element on top, and in the middle, of it's closest
+ * position: relative parent.
+ */
+.absoluteCenter() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/**
+ * Quick Grid
+ *
+ * Quickly generate a simple grid.
+ *
+ * Documentation: http://wiki.mdz.com.au/index.php?title=Using_the_quickGrid_Mixin
+ */
+.quickGrid( @name, @gutter, @columns, @columnsS : @columns, @columnsM : @columnsS, @columnsL : @columnsM, @columnsXL : @columnsL ) {
+	.@{name}-grid {
+		margin-left: ( -@gutter / 2 );
+		margin-right: ( -@gutter / 2 );
+
+		.clearfix();
+	}
+
+	.@{name}-grid__column {
+		float: left;
+		width: (100%/@columns);
+		padding-left: ( @gutter / 2 );
+		padding-right: ( @gutter / 2 );
+
+		@clear: e( '@{columns}n+1' );
+
+		&:nth-child(@{clear}) {
+			clear: left;
+		}
+
+		._quickGridMediaQueries( @current, @previous, @breakpoint ) when not ( @current = @previous ) {
+			@media ( min-width: @breakpoint ) {
+				width: ( 100% / @current );
+
+				@unclear: e( '@{previous}n+1' );
+				@clear: e( '@{current}n+1' );
+
+				&:nth-child(@{unclear}) {
+					clear: none;
+				}
+
+				&:nth-child(@{clear}) {
+					clear: left;
+				}
+			}
+		}
+
+		._quickGridMediaQueries( @columnsS; @columns; @S );
+		._quickGridMediaQueries( @columnsM; @columnsS; @M );
+		._quickGridMediaQueries( @columnsL; @columnsM; @L );
+		._quickGridMediaQueries( @columnsXL; @columnsXL; @XL );
+	}
+}

@@ -1,0 +1,25 @@
+.nav-link {
+    font-size: 1.1em;
+    font-family: @headingsFamily;
+}
+
+.nav-link--prev:before,
+.nav-link--next:after {
+    content: url(images/chevron.svg);
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    line-height: 1;
+    background: currentColor;
+}
+
+.nav-link--next:after {
+    margin-left: 0.5em;
+}
+
+.nav-link--prev:before {
+    margin-right: 0.5em;
+    transform: rotateZ(-180deg);
+}
