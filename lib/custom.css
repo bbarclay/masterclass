@@ -56,9 +56,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "dinpro black", sans-serif;
+    font-family: "Dinpro Bold", sans-serif;
     font-size: 60px;
-
     color: #002749;
 }
 .module__header {
@@ -188,7 +187,6 @@ input {
 .event {
     min-height: 500px;
     padding: 50px 0;
-
     background: url(../images/frontpage/52-Ways-Hero-Image.jpg) center center / cover no-repeat;
 }
 
@@ -588,9 +586,9 @@ fieldset:not(:first-of-type) {
 .site-footer a:hover {
     text-decoration: none;
 
+
     color: #f15d22;
 }
-
 
 @media (min-width: 960px) {
     .button--large {
@@ -598,6 +596,10 @@ fieldset:not(:first-of-type) {
     }
 }
 @media (max-width: 960px) {
+	.button--large {
+        font-size: 1em;
+    }
+	
     .event .form-inner {
         padding-right: 0;
     }
@@ -661,10 +663,10 @@ fieldset:not(:first-of-type) {
 }
 @media (max-width: 767px) {
     img.event__logo {
-        max-width: 300px;
+        width:100%;
     }
     .event .inner-text {
-        padding-right: 100px;
+        width:65%;
     }
     .event .form-inner {
         padding-top: 0;
@@ -682,12 +684,66 @@ fieldset:not(:first-of-type) {
 }
 @media ( max-width: 560px ) {
     .event .inner-text {
-        padding-right: 0;
-
-        text-align: center;
+        width:65%;
     }
+	.event .inner-text h3{
+		font-size:18px;
+	}
     .biz-app__phone {
         max-width: 100%;
         margin: 0 auto;
     }
+	
+}
+@media ( max-width: 480px ) {
+	.event {
+		background-position-x: 55%;
+	}
+}
+
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: #002749;
+}
+.footer__logo {
+    margin: .5rem 0 2rem;
+}
+.footer__right {
+    position: relative;
+    z-index: 10;
+}
+.footer__bottom {
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px dotted #02325d;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.social-menu {
+    padding: 0;
+    list-style: none;
+    word-spacing: .1em;
+}
+.footer__bottom ul {
+    display: inline-block !important;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: none !important;
+}
+.footer__bottom ul li {
+    display: inline-block;
+    margin: 0;
+    font-size: 18px;
+}
+.footer__bottom ul li:before {
+    content: "/";
+    color: #3b67ad;
+}
+.footer__bottom ul li a {
+    font-size: .875em;
 }
