@@ -144,7 +144,7 @@ input {
     max-width: 1080px;
 }
 .video {
-    background: url(../images/video-bg.png) center center / cover no-repeat;
+    background: url(../images/video-bg2.png) center center / cover no-repeat;
 }
 .video h1 {
     font-size: 30px;
@@ -185,7 +185,6 @@ input {
     height: 100%;
 }
 .event {
-    min-height: 500px;
     padding: 50px 0;
     background: url(../images/frontpage/52-Ways-Hero-Image.jpg) center center / cover no-repeat;
 }
@@ -316,7 +315,6 @@ input {
     width: 50%;
     padding-right: 15px;
     padding-left: 15px;
-
     order: 2;
 }
 #form2 .module__header {
@@ -605,24 +603,27 @@ fieldset:not(:first-of-type) {
     }
     .apply-now {
         padding-bottom: 30px;
+		background-position-x:62%;
     }
-    .apply-now .inner-text {
-        text-align: center;
-    }
+	
+	
+	.apply-now .col-right {
+		margin-left: 40%;
+		width: 60%;
+		padding-right: 15px;
+		padding-left: 15px;
+		order: 2;
+	}
+	
+	.apply-now h3{
+		font-size:22px;
+	} 
+	
     .apply-now .form-inner {
         max-width: 500px;
         margin: 0 auto;
     }
-    .apply-now .col-left {
-        width: 100%;
-
-        order: 2;
-    }
-    .apply-now .col-right {
-        width: 100%;
-
-        order: 1;
-    }
+    
     #multisteps-form {
         text-align: left;
     }
@@ -681,6 +682,25 @@ fieldset:not(:first-of-type) {
     .event .form-inner {
         padding-right: 0;
     }
+	
+	.apply-now{min-height:0;}
+	.apply-now p{display:none;}
+	
+}
+
+@media ( max-width: 640px ) {
+	.apply-now img.bb_logo{width:65%;}
+	.apply-now img{width:85%; display:block;}
+	.apply-now .col-right {
+		margin-left: 40%;
+		width: 60%;
+		padding-right: 15px;
+		padding-left: 15px;
+		order: 2;
+	}
+	.apply-now h3{
+			font-size:16px;
+		} 
 }
 @media ( max-width: 560px ) {
     .event .inner-text {
