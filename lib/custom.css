@@ -703,7 +703,16 @@ fieldset:not(:first-of-type) {
 		} 
 }
 @media ( max-width: 560px ) {
-    .event .inner-text {
+    .apply-now .col-right {
+		margin-left: 40%;
+		width: 60%;
+		padding-right: 0;
+		padding-left: 0;
+		order: 2;
+	}
+	.apply-now h3{font-size:16px;}
+	
+	.event .inner-text {
         width:65%;
     }
 	.event .inner-text h3{
@@ -716,6 +725,9 @@ fieldset:not(:first-of-type) {
 	
 }
 @media ( max-width: 480px ) {
+	.apply-now {
+		background-position-x: 50%;
+	}
 	.event {
 		background-position-x: 55%;
 	}
