@@ -722,6 +722,10 @@ fieldset:not(:first-of-type) {
         max-width: 100%;
         margin: 0 auto;
     }
+	.biz-app img {
+        width: 360px;
+        margin-bottom: 10px;
+    }
 	
 }
 @media ( max-width: 480px ) {
@@ -780,4 +784,4 @@ fieldset:not(:first-of-type) {
     font-size: .875em;
 }
 
-/** Test commit 1**/
+/** Test commit 2**/
