@@ -1,3 +1,6 @@
+<section class="myheader">
+<h1>Your Next Step: <span>Option 1</span></h1>
+</section>
 <section class="module event">
  <div class="container">
      <div class="row">
