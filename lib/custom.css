@@ -147,7 +147,7 @@ input {
     background: url(../images/video-bg2.png) center center / cover no-repeat;
 }
 .video h1 {
-    font-size: 30px;
+    font-size: 2.4em;
     text-align: center;
     color: #ffffff;
     margin-bottom: 20px;
@@ -594,6 +594,10 @@ fieldset:not(:first-of-type) {
     }
 }
 @media (max-width: 960px) {
+	.video h1 {
+		font-size:2.1em;
+	}
+	
 	.button--large {
         font-size: 1em;
     }
@@ -663,6 +667,9 @@ fieldset:not(:first-of-type) {
     }
 }
 @media (max-width: 767px) {
+	.video h1 {
+		font-size:1.8em;
+	}
     img.event__logo {
         width:100%;
     }
@@ -689,6 +696,9 @@ fieldset:not(:first-of-type) {
 }
 
 @media ( max-width: 640px ) {
+	.video h1 {
+		font-size:4.2vw;
+	}
 	.apply-now img.bb_logo{width:65%;}
 	.apply-now img{width:85%; display:block;}
 	.apply-now .col-right {
@@ -703,6 +713,9 @@ fieldset:not(:first-of-type) {
 		} 
 }
 @media ( max-width: 560px ) {
+	.video h1 {
+		font-size:4.7vw;
+	}
     .apply-now .col-right {
 		margin-left: 40%;
 		width: 60%;
@@ -722,8 +735,9 @@ fieldset:not(:first-of-type) {
         max-width: 100%;
         margin: 0 auto;
     }
+	
 	.biz-app img {
-        width: 360px;
+        width: 320px;
         margin-bottom: 10px;
     }
 	
