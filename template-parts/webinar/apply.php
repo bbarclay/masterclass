@@ -24,7 +24,7 @@
 <section id="form2"  class="module  module--text-background  module--sign-up">
    <div class="container">
         <header class="module__header">
-                  <h2 class="module__title">Become a Member Now</h2>
+                  <h2 class="module__title">Apply Now</h2>
          </header>
         <div class="form-inner">
               <?php echo get_sub_field('form') ?>   
