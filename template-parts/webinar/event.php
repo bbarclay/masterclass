@@ -8,10 +8,10 @@
              <div class="button-group">
               <div class="row">
                 <div class="col-sm-5">
-                   <a href="https://52ways.com/" class="button button--large button--wide button-secondary">Learn more</a>
+                   <a href="https://52ways.com/" class="button button--large button--wide button-secondary" target="new">Learn more</a>
                 </div>
                 <div class="col-sm-5">
-                    <a href="#form" class="button button--large button--wide button-primary">Book Now</a>
+                    <a href="#form" class="button--large button--wide button-primary button-booknow">Book Now</a>
                 </div>
               </div>
              </div>
