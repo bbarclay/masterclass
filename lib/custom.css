@@ -83,21 +83,18 @@ input {
     padding-right: 15px;
     padding-left: 15px;
 }
-.button {
+.button, .button-booknow {
     display: inline-block;
     min-width: 150px;
     padding: .6em;
-
     font-size: 1.3rem;
     line-height: 1;
-
     -webkit-transition: all .5s ease;
             transition: all .5s ease;
     text-align: center;
     vertical-align: top;
     text-transform: uppercase;
     text-transform: uppercase;
-
     color: #fff;
     color: #fff;
     border: 0;
@@ -110,11 +107,13 @@ input {
 .button--wide {
     display: block;
 }
-.button:hover {
+.button:hover, .button-booknow:hover {
     text-decoration: none;
-
     color: #fff;
     background: #002749;
+}
+.button-booknow{
+	font-family: "Geogrotesque-Bold", sans-serif;
 }
 .button-group {
     margin: 20px 0;
@@ -798,4 +797,4 @@ fieldset:not(:first-of-type) {
     font-size: .875em;
 }
 
-/** Test commit 2**/
+/** Test commit 3**/
