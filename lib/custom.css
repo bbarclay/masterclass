@@ -765,7 +765,14 @@ fieldset:not(:first-of-type) {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background: #002749;
+	
 }
+
+.footer{
+	overflow:hidden
+}
+
+
 .footer__logo {
     margin: .5rem 0 2rem;
 }
@@ -806,5 +813,34 @@ fieldset:not(:first-of-type) {
 .footer__bottom ul li a {
     font-size: .875em;
 }
+
+.footer .container{
+	position:relative;
+}
+
+
+.footer .container:before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    background: url(../images/BB-Rectangle-White.png);
+	left:-70px;
+	bottom:-140px;
+	opacity:.7;
+}
+
+.footer .container:after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: url(../images/BB-Dots-White.png);
+	opacity:.7;
+	top:-150px;
+	right:-95px;
+}
+
+
 
 /** Test commit 3b**/
