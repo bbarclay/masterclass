@@ -794,6 +794,11 @@ fieldset:not(:first-of-type) {
     list-style: none;
     word-spacing: .1em;
 }
+
+ul.social-menu li a:hover{
+	text-decoration:none !important;
+}
+
 .footer__bottom ul {
     display: inline-block !important;
     padding: 0;
