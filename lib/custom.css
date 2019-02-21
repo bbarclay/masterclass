@@ -805,10 +805,12 @@ fieldset:not(:first-of-type) {
     display: inline-block;
     margin: 0;
     font-size: 18px;
+	margin-right:0.5em;
 }
 .footer__bottom ul li:before {
     content: "/";
     color: #3b67ad;
+	margin-right:0.5em;
 }
 .footer__bottom ul li a {
     font-size: .875em;
