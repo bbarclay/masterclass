@@ -18,7 +18,7 @@
 					<div class="grid">
 						<div class="grid__column  grid__column--l-12">
 							<a href="<?php echo home_url(); ?>" title="Return to homepage">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/logo_v2.svg" class="logo" width="230">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/bb-live.svg" class="logo" width="320">
 							</a>
 						</div>
 					</div>
