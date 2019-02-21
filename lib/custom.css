@@ -822,10 +822,10 @@ fieldset:not(:first-of-type) {
 .footer .container:before {
     content: '';
     position: absolute;
-    width: 250px;
+    width: 350px;
     height: 160px;
     background: url(../images/BB-Rectangle-White.png);
-	left:-70px;
+	left:-80px;
 	bottom:-140px;
 	opacity:.7;
 }
