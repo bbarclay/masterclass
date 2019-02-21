@@ -67,6 +67,10 @@ h6 {
 .module {
     padding: 2rem 0 1rem;
 }
+
+.header .logo{width:420px;}
+
+
 h2.module__title{font-size:2.2em;}
 input {
     height: 45px;
@@ -680,6 +684,7 @@ fieldset:not(:first-of-type) {
     }
 }
 @media (max-width: 767px) {
+	.header .logo{width:320px;}
 	.video h1 {
 		font-size:1.8em;
 	}
@@ -709,6 +714,7 @@ fieldset:not(:first-of-type) {
 }
 
 @media ( max-width: 640px ) {
+	.header .logo{width:280px;}
 	.video h1 {
 		font-size:1.5em;;
 	}
