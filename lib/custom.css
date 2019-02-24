@@ -192,6 +192,7 @@ input {
 .ask{
 	background:#FAF9F8;
 }
+/**
 @media ( max-width: 480px ) {
 	.scroll-wrapper {
 		position:relative;
@@ -202,7 +203,7 @@ input {
 		height:400px;
 	}
 }
-
+**/
 .myheader{padding:2em 0;}
 .myheader h1{margin-bottom:0;}
 .ask h1, .myheader h1{color:#00254C; }
