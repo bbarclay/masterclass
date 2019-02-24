@@ -191,12 +191,13 @@ input {
 
 .ask{
 	background:#FAF9F8;
+	position:relative;
 }
 @media ( max-width: 480px ) {
 	.scroll-wrapper {
 	  	-webkit-overflow-scrolling: touch;
 	  	overflow-y: scroll;
-		position: relative; 
+		position:fixed;
 		  right: 0; 
 		  bottom: 0; 
 		  left: 0;
