@@ -201,7 +201,7 @@ input {
 .myheader h1 span{
 	 font-family: "Dinpro Medium";
 	}
-
+.ask h1 span{display:inline;}
 
 .event {
     padding: 50px 0;
