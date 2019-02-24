@@ -195,8 +195,8 @@ input {
 .scroll-wrapper {
 	-webkit-overflow-scrolling: touch;
   	overflow-y: scroll;
-
-	/* important:  dimensions or positioning here! */
+	width:100%;
+	height:100px;
 }
 
 .myheader{padding:2em 0;}
