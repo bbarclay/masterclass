@@ -196,7 +196,6 @@ input {
 	.scroll-wrapper {
 	  	-webkit-overflow-scrolling: touch;
 	  	overflow-y: scroll;
-		height:200px;
 	}
 	.scroll-wrapper iframe{
 		height: 200px;
