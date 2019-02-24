@@ -156,6 +156,7 @@ input {
     color: #ffffff;
     margin-bottom: 20px;
 }
+.video h1 span{display:block;}
 
 .video-inner {
     position: relative;
@@ -577,9 +578,7 @@ fieldset:not(:first-of-type) {
 
 .module--gallery{padding:0;}
 .gallery--images img{width:16.6666666667%; float:left;}
-.webinar-gallery{
-	
-	}
+
 .webinar-gallery:hover{
 	transform: scale(1.05);
 	}
@@ -734,6 +733,7 @@ fieldset:not(:first-of-type) {
 	.video h1 {
 		font-size:1.5em;;
 	}
+	.video h1 span{display:inline;}
 	.apply-now img.bb_logo{width:65%;}
 	.apply-now img{width:85%; display:block;}
 	.apply-now .col-right {
@@ -782,7 +782,7 @@ fieldset:not(:first-of-type) {
 		background-position-x: 55%;
 	}
 	
-	.gallery--images img{width:33.333333%;}
+	.gallery--images img{width:33.3333%;}
 }
 
 
