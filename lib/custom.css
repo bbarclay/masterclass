@@ -575,14 +575,12 @@ fieldset:not(:first-of-type) {
 
 
 .module--gallery{padding:0;}
-.gallery--images img{width:14.2857%; float:left;}
+.gallery--images img{width:16.6666666667%; float:left;}
 .webinar-gallery{
-	opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
+	
 	}
 .webinar-gallery:hover{
-	opacity: 1;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+	transform: scale(1.05);
 	}
 .gallery-clear{clear:both;}
 
