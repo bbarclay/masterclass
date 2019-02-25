@@ -4,7 +4,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
-
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" type="image/x-icon" />
 	<?php wp_head(); ?>
 </head>
 
