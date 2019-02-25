@@ -207,6 +207,7 @@ input {
     padding: 50px 0;
     background: url(../images/frontpage/52-Ways-Hero-Image.jpg) center center / cover no-repeat;
 }
+.myheader h1 span{display:inline;}
 
 .event h3 {
     margin: 0;
