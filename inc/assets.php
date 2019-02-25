@@ -29,11 +29,12 @@ function cascade_enqueue_assets() {
 	wp_register_script( 'cascade-tabs', get_template_directory_uri() . '/js/tabs.js', array( 'velocity', 'jquery' ), false, true );
 	wp_enqueue_script( 'cascade-toggle', get_template_directory_uri() . '/js/toggle.js', array( 'jquery' ), false, true );
 	wp_enqueue_script( 'fitvids', get_template_directory_uri() . '/lib/jquery.fitvids.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'fancy-js', get_template_directory_uri() . '/js/jquery.fancybox.min.js', array( 'jquery' ), false, true );
 
 	wp_enqueue_script('jquery-ui-core');
 	wp_enqueue_script( 'jquery-easing', '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array('jquery'), false, true );
 	
-	wp_enqueue_script( 'fancy-box', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js', array('jquery'), false, true );
+	
 	
 	
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array(), false, true );
