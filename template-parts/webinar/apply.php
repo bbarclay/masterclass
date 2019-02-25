@@ -15,7 +15,7 @@
 
              <p>We look forward to the possibility of working with you and helping you to achieve your dreams.</p>
 
-             <a href="#form2" class="button button--large button--wide button-primary">Apply Now</a>
+             <a href="#form2" class="button button--large button--wide">Apply Now</a>
           </div>
        </div>
     </div>
