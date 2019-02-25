@@ -32,6 +32,10 @@ function cascade_enqueue_assets() {
 
 	wp_enqueue_script('jquery-ui-core');
 	wp_enqueue_script( 'jquery-easing', '//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array('jquery'), false, true );
+	
+	wp_enqueue_script( 'fancy-box', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js', array('jquery'), false, true );
+	
+	
 	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array(), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'cascade_enqueue_assets' );
