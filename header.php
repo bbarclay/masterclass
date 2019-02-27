@@ -20,6 +20,9 @@
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+<div id="fb-root"></div>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=288699208712233&autoLogAppEvents=1">
+</script>
 	<a class="screen-reader-text  skip-link" href="#content">Skip to main content</a>
 
 	<div class="site">
@@ -28,7 +31,7 @@
 				<div class="container">
 					<div class="grid">
 						<div class="grid__column  grid__column--l-12">
-							<a href="<?php echo home_url(); ?>" title="Return to homepage">
+							<a href="" title="Return to homepage">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/businessblueprint-live-tagline.svg" class="logo">
 							</a>
 						</div>

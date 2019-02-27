@@ -190,7 +190,7 @@ input {
     height: 100%;
 }
 
-.ask{
+.ask, .facebook_comments{
 	background:#FAF9F8;
 }
 
