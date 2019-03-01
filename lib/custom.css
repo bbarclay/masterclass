@@ -875,5 +875,28 @@ ul.social-menu li a:hover{
 }
 
 
+.input-inner{
+	width:600px;
+	margin:2em auto;
+}
+.input-inner input{
+	width:100%;
+	margin-bottom:1em;
+}
+.input-inner input[type='submit']{
+	background:#7AC143;
+	color:#FFF;
+	font-weight:bold;
+	width:200px;
+	border-radius:3px;
+}
 
-/** Test commit 4**/
+.input-inner input[type='submit']:hover{
+	background:#F15D22;
+}
+
+
+
+
+
+/** Test commit 5**/
