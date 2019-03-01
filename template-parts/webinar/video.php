@@ -29,6 +29,13 @@ function showDiv() {
 }
 </script>
 
+<script>
+if (window.location.href.indexOf("?email") != -1) {
+jQuery(".video-inner").show();
+jQuery(".input-inner").hide();
+}
+</script>
+
 
 
 
