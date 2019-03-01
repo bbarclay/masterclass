@@ -895,7 +895,12 @@ ul.social-menu li a:hover{
 	background:#F15D22;
 }
 
-
+@media ( max-width: 640px ) {
+	.input-inner{
+		width:90%;
+		margin:2em auto;
+	}
+}
 
 
 
