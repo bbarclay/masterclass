@@ -21,14 +21,6 @@
 
    </div>
 </section>
-
-<script>
-function showDiv() {
-   document.getElementById('welcomeDiv').style.display = "block";
-   document.getElementById('hideForm').style.display = "none";
-}
-</script>
-
 <script>
 if (window.location.href.indexOf("?email") != -1) {
 jQuery(".video-inner").show();
