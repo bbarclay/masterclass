@@ -5,6 +5,7 @@
         <div class="video-wrap">
         	<?php  if ( get_sub_field( 'form_fill' ) ) : ?>
         	<div id="hideForm" class="input-inner">
+            	<p style="color:#FFF; text-align:center;">Enter your unique username and password to view this Business Blueprint LIVE session.</p>
             	<?php echo get_sub_field('form_fill') ?>
             </div>
             <?php endif; ?>
@@ -22,7 +23,7 @@
    </div>
 </section>
 <script>
-if (window.location.href.indexOf("?email") != -1) {
+if (window.location.href.indexOf("#video") != -1) {
 jQuery(".video-inner").show();
 jQuery(".input-inner").hide();
 }
