@@ -23,7 +23,7 @@
    </div>
 </section>
 <script>
-if (window.location.href.indexOf("#video" && "?email") != -1) {
+if (window.location.href.indexOf("#video") != -1) {
 jQuery(".video-inner").show();
 jQuery(".input-inner").hide();
 }
