@@ -13,7 +13,7 @@
 
              <p>Book a chat with one of our team to discover the various options available to you through the Business Blueprint Membership program. During this chat, we will assess your business to ensure that you're a fit for the program, and also gauge your needs and expectations to ensure that we can meet them.</p>
              
-              <p>We will also provide information on the ways in which we can work together to build the business of your dreams. So go ahead, take the next step now and book in below..</p>
+             
 
              <a href="#form2" class="button button--large button--wide">Book Now</a>
           </div>
