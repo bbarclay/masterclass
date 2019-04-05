@@ -7,7 +7,7 @@
        <div class="col-md-6">
           <div class="inner-text">
              <img src="<?php echo get_template_directory_uri() ?>/images/52ways-logo-rebrand.svg" class="event__logo" />
-             <h3>Quietly Simply, The Best 1-Day Business Workshop, EVER & It's 100% FREE...</h3>
+             <h3>The Best 1-Day Business Workshop, EVER & It's 100% FREE. ACT NOW!</h3>
              <div class="button-group">
               <div class="row">
                 <div class="col-sm-5">
