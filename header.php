@@ -4,7 +4,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" type="image/x-icon" />
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.jpg" type="image/x-icon" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122654663-2"></script>
