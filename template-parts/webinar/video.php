@@ -10,10 +10,11 @@
             </div>
             <?php endif; ?>
           
-            
+           
            <?php if ( get_sub_field( 'form_fill' ) ) : ?>
+           <small class="video_note"><center><strong>NOTE:</strong> If you log in early, and the video stream doesn't start automatically, please try refreshing this page so you can get the live stream.</center></small>
            <div id="welcomeDiv" class="video-inner" style="display:none;">
-           <?php else: ?>  
+           <?php else: ?> 
            <div id="welcomeDiv" class="video-inner">
            <?php endif; ?>
               <?php echo get_sub_field('content') ?>
@@ -22,10 +23,14 @@
 
    </div>
 </section>
+<style>
+.video_note{color:#FFF; display:none; text-align:center;}
+</style>
 <script>
 if (window.location.href.indexOf("#video") != -1) {
 jQuery(".video-inner").show();
 jQuery(".input-inner").hide();
+jQuery(".video_note").show();
 }
 </script>
 
