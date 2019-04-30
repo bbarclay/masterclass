@@ -14,7 +14,6 @@
            <?php if ( get_sub_field( 'form_fill' ) ) : ?>
            <div id="welcomeDiv" class="video-inner" style="display:none;">
            <?php else: ?>  
-           <center><small style="color:#FFF;">NOTE: If you log in early, and the video stream doesn't start automatically, please try refreshing this page so you can get the live stream.</small></center>
            <div id="welcomeDiv" class="video-inner">
            <?php endif; ?>
               <?php echo get_sub_field('content') ?>
