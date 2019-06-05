@@ -212,7 +212,7 @@ input {
 .event h3 {
     margin: 0;
 
-    font-size: 28px;
+    font-size: 25px !important;
     line-height: 1.2;
 
     color: #002749;
